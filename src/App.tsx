@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { Component2 } from './Component2';
+import { Parent1 } from './parent-to-child/Parent1';
 
 function App() {
   const [state, setState] = useState({data:""});
@@ -16,6 +17,7 @@ function App() {
           <button onClick={changeState} type='button'>Send State</button>  
         </div>    
         <Component2 data={state.data} />
+        <Parent1 />
     </div>
   );
 }
